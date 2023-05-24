@@ -1,5 +1,5 @@
-name: travel_app
-description: A new Flutter project.
+name: beograd_plus
+description: Tickets for Belgrade public transport 2023
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -34,6 +34,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.8
 
 dev_dependencies:
   flutter_test:
