@@ -11,7 +11,7 @@ class Ticket {
 
   Ticket.fromJson(Map<String, dynamic> json) {
     if (json['zone'] != null) {
-      zone = CityZoneFromJson[json['zone']]!;
+      zone = CityZoneFromString[json['zone']]!;
     }
     if (json['type'] != null) {
       type = TicketTypeFromJson[json['type']]!;
@@ -26,7 +26,7 @@ class Ticket {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    data['zone'] = CityZoneToJson[zone];
+    data['zone'] = CityZoneToString[zone];
     data['type'] = TicketTypeToJson[type];
     data['smsText'] = smsText;
     data['price'] = price;

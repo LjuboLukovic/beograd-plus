@@ -1,4 +1,6 @@
+import 'package:beograd_plus/src/widgets/zone_chooser.dart';
 import 'package:flutter/material.dart';
+import 'util/preference_utils.dart';
 import 'widgets/help/help_screen.dart';
 import 'widgets/settings/settings_screen.dart';
 import 'widgets/tickets_list.dart';
@@ -15,12 +17,26 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _counter = 0;
+  CityZone currentZone = CityZone.A;
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
+  void setCurrentZone(CityZone zone) {
+    setState(() => currentZone = zone);
+    PreferenceUtils.setString('default_zone', CityZoneToString[zone]!)
+        .then((value) => print('Zone selected'));
+  }
+
+  void initialize() {
+    PreferenceUtils.init().then((preferences) {
+      String defaultZone = PreferenceUtils.getString('default_zone', 'A');
+      setState(
+          () => currentZone = CityZoneFromString[defaultZone] ?? CityZone.A);
     });
+  }
+
+  @override
+  void initState() {
+    initialize();
+    super.initState();
   }
 
   @override
@@ -45,11 +61,15 @@ class _HomePageState extends State<HomePage> {
             )
           ],
         ),
-        body: Center(child: TicketsList(PRICE_LIST[CityZone.A]!)),
-        floatingActionButton: FloatingActionButton(
-          onPressed: _incrementCounter,
-          tooltip: 'Increment',
-          child: const Icon(Icons.add),
-        ));
+        body: SingleChildScrollView(
+            child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Padding(padding: EdgeInsets.only(top: 16)),
+            const Text('Zona\n'),
+            ZoneChooser(currentZone, setCurrentZone),
+            TicketsList(PRICE_LIST[currentZone]!)
+          ],
+        )));
   }
 }

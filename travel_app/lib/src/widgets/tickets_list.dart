@@ -19,6 +19,8 @@ class TicketsList extends StatelessWidget {
               textAlign: TextAlign.center,
             )
           : ListView.builder(
+              primary: false,
+              shrinkWrap: true,
               itemCount: tickets.length,
               itemBuilder: (context, int index) =>
                   buildCard(context, tickets[index])),
@@ -50,7 +52,15 @@ class TicketsList extends StatelessWidget {
           },
           child: ListTile(
             leading: Text(ticket.smsText),
-            title: Text(getLabelFromType(ticket.type)),
+            title:
+                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(
+                getLabelFromType(ticket.type),
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+              Text('Cena: ${ticket.price} RSD',
+                style: Theme.of(context).textTheme.bodyMedium,)
+            ]),
             trailing: const Icon(Icons.sms),
           ),
         ));

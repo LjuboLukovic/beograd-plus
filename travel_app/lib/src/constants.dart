@@ -31,3 +31,31 @@ Map<CityZone, List<Ticket>> PRICE_LIST = {
   CityZone.B: ZONE_B_TICKETS,
   CityZone.C: ZONE_C_TICKETS,
 };
+
+List<String> ZONE_A_MUNICIPALITIES = [
+  "Novi Beograd",
+  "Zemun",
+  "Stari grad",
+  "Savski venac",
+  "Voždovac",
+  "Čukarica",
+  "Vračar",
+  "Rakovica",
+  "Palilula",
+  "Zvezdara",
+  "Surčin",
+  "Grocka (severno od puta 347 Vrčin - Zaklopača)"
+];
+
+List<String> ZONE_B_MUNICIPALITIES = [
+  "Lazarevac",
+  "Mladenovac",
+  "Obrenovac",
+  "Barajevo",
+  "Sopot",
+  "Grocka (južno od puta 347 Vrčin - Zaklopača)"
+];
+
+List<String> ZONE_C_MUNICIPALITIES = [
+  "Teritorija koja pokriva svih 17 beogradskih opština"
+];
