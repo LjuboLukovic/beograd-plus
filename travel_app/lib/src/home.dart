@@ -17,7 +17,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  CityZone currentZone = CityZone.A;
+  CityZone? currentZone;
 
   void setCurrentZone(CityZone zone) {
     setState(() => currentZone = zone);
@@ -67,8 +67,10 @@ class _HomePageState extends State<HomePage> {
           children: [
             const Padding(padding: EdgeInsets.only(top: 16)),
             const Text('Zona\n'),
-            ZoneChooser(currentZone, setCurrentZone),
-            TicketsList(PRICE_LIST[currentZone]!)
+            if (currentZone != null) ...[
+              ZoneChooser(currentZone!, setCurrentZone),
+              TicketsList(PRICE_LIST[currentZone]!)
+            ]
           ],
         )));
   }
