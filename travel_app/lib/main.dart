@@ -1,5 +1,5 @@
-import 'package:beograd_plus/src/home.dart';
 import 'package:flutter/material.dart';
+import 'package:beograd_plus/src/widgets/home/home_screen.dart';
 
 void main() {
   runApp(const TravelApp());

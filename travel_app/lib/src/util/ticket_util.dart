@@ -10,7 +10,7 @@ String getLabelFromType(TicketType? type) {
     case TicketType.WEEK:
       return 'Nedeljna karta (7 dana)';
     case TicketType.MONTH:
-      return 'Mesečna karta (30 dana)';
+      return 'Mesečna karta';
     default:
       return 'Vremenska karta (90 min)';
   }

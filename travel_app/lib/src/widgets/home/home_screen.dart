@@ -1,11 +1,11 @@
-import 'package:beograd_plus/src/widgets/zone_chooser.dart';
 import 'package:flutter/material.dart';
-import 'util/preference_utils.dart';
-import 'widgets/help/help_screen.dart';
-import 'widgets/settings/settings_screen.dart';
-import 'widgets/tickets_list.dart';
-import 'constants.dart';
-import 'model/city_zone.dart';
+import '../../util/preference_utils.dart';
+import '../help/help_screen.dart';
+import '../settings/settings_screen.dart';
+import 'tickets_list.dart';
+import '../../constants.dart';
+import '../../model/city_zone.dart';
+import 'selected_zone.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key, required this.title}) : super(key: key);
@@ -41,6 +41,13 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    const busDecoration = BoxDecoration(
+      image: DecorationImage(
+        image: AssetImage("assets/images/bus_27e.png"),
+        opacity: 0.2,
+        fit: BoxFit.cover,
+      ),
+    );
     return Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
@@ -57,21 +64,20 @@ class _HomePageState extends State<HomePage> {
               onPressed: () => Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const SettingsScreen()),
-              ),
+              ).then((value) => initialize()),
             )
           ],
         ),
-        body: SingleChildScrollView(
-            child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            const Padding(padding: EdgeInsets.only(top: 16)),
-            const Text('Zona\n'),
-            if (currentZone != null) ...[
-              ZoneChooser(currentZone!, setCurrentZone),
-              TicketsList(PRICE_LIST[currentZone]!)
-            ]
-          ],
-        )));
+        body: Container(
+                decoration: busDecoration,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    if (currentZone != null) ...[
+                      SelectedZone(currentZone!, setCurrentZone),
+                      TicketsList(PRICE_LIST[currentZone]!)
+                    ]
+                  ],
+                )));
   }
 }

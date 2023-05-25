@@ -1,8 +1,8 @@
-import 'package:beograd_plus/src/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../util/ticket_util.dart';
-import '../model/ticket.dart';
+import '../../constants.dart';
+import '../../model/ticket.dart';
+import '../../util/ticket_util.dart';
 
 class TicketsList extends StatelessWidget {
   List<Ticket> tickets;
