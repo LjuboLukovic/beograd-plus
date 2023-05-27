@@ -36,6 +36,7 @@ class TicketsList extends StatelessWidget {
       },
     );
     return Card(
+        // color: getColorFromZone(ticket.zone),
         margin: const EdgeInsets.only(left: 16, bottom: 8, right: 16, top: 8),
         child: InkWell(
           // When the user taps the button, show a snackbar.
@@ -50,18 +51,40 @@ class TicketsList extends StatelessWidget {
               }
             });
           },
-          child: ListTile(
-            leading: Text(ticket.smsText),
-            title:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(
-                getLabelFromType(ticket.type),
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-              Text('Cena: ${ticket.price} RSD',
-                style: Theme.of(context).textTheme.bodyMedium,)
-            ]),
-            trailing: const Icon(Icons.sms),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    const Icon(Icons.sms),
+                    Text(
+                      '  ${ticket.smsText}',
+                      style: const TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+                Text(
+                  getLabelFromType(ticket.type),
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+                Text(
+                  getDescriptionFromType(ticket.type),
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+                SizedBox(
+                    width: double.infinity,
+                    child: Padding(
+                        padding: const EdgeInsets.only(top: 8),
+                        child: Text(
+                          'Cena: ${ticket.price} RSD',
+                          textAlign: TextAlign.end,
+                          style: Theme.of(context).textTheme.bodyMedium,
+                        )))
+              ],
+            ),
           ),
         ));
   }

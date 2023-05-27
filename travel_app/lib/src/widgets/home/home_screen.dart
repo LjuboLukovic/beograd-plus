@@ -75,7 +75,9 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     if (currentZone != null) ...[
                       SelectedZone(currentZone!, setCurrentZone),
-                      TicketsList(PRICE_LIST[currentZone]!)
+                      const Text('SMS: 9011'),
+                      TicketsList(PRICE_LIST[currentZone]!),
+                      const Text('** Noćni prevoz od 00:00 do 04:00 je besplatan!'),
                     ]
                   ],
                 )));
