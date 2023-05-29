@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBYfVpovhKT4IQbCAT8t6Z0ZVpVVMLtBNQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>642657997208</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>rs.beogradplus.travelApp</string>
+	<key>PROJECT_ID</key>
+	<string>beograd-plus-b333c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>beograd-plus-b333c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:642657997208:ios:d47c47082a413859d59bed</string>
+</dict>
+</plist>

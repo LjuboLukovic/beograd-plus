@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "642657997208",
+    "project_id": "beograd-plus-b333c",
+    "storage_bucket": "beograd-plus-b333c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642657997208:android:0b913f19b2cf6dc0d59bed",
+        "android_client_info": {
+          "package_name": "rs.beogradplus.travel_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJtTFmrT7zp6jdovVWC--nzfeqnYkh5SE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
