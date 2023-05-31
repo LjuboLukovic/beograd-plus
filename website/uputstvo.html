@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="rs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="Beograd plus" />
+    <meta
+      name="description"
+      content="Beograd plus mobilna aplikacija. Kupovina karata za gradski prevoz Beograd."
+    />
+    <meta
+      name="keywords"
+      content="Beograd prevoz, GSP, Beograd plus sms, 9011"
+    />
+    <meta name="author" content="Sakal Software" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Beograd plus</title>
+    <!--add animation: gradient 60s ease infinite; to animation gradient, custom gradient here: https://cssgradient.io/-->
+    <style>
+      body {
+        background: rgb(255, 64, 129);
+        background: linear-gradient(150deg, #002079 0%, #c3010d 30%);
+        background-size: 400% 400%;
+      }
+      .language {
+        position: fixed;
+        top: 0;
+        right: 5px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <main class="container">
+      <div class="d-flex p-3 text-white my-3 rounded">
+        <div class="col-lg-9">
+          <h1>BEOGRAD PLUS KUPOVINA KARATA ZA JAVNI PREVOZ</h1>
+          <p>
+            Kupovina karata za javni prevoz vrši se slanjem SMS poruke na broj
+            9011, a u tekst poruke unosimo tekst karte u zavisnosti od toga koju
+            kartu želimo kupiti.
+          </p>
+          <p>Postoji više vrsta karata.</p>
+          <h2>VREMENSKA KARTA – 90 MIN</h2>
+          <ul>
+            <li>Zona A – cena 50 dinara, tekst karte za SMS poruku A90</li>
+            <li>Zona B – cena 50 dinara, tekst karte za SMS poruku B90</li>
+            <li>
+              Zona C (A+B) – cena 100 dinara, tekst karte za SMS poruku C90
+            </li>
+          </ul>
+
+          <h2>DNEVNA KARTA – 1 DAN</h2>
+          <ul>
+            <li>Zona A – cena 120 dinara, tekst karte za SMS poruku A1</li>
+            <li>Zona B – cena 120 dinara, tekst karte za SMS poruku B1</li>
+            <li>
+              Zona C (A+B) – cena 150 dinara, tekst karte za SMS poruku C1
+            </li>
+          </ul>
+
+          <h2>NEDELJNA KARTA – 7 DANA</h2>
+          <ul>
+            <li>Zona A – cena 800 dinara, tekst karte za SMS poruku A7</li>
+            <li>Zona B – cena 800 dinara, tekst karte za SMS poruku B7</li>
+            <li>
+              Zona C (A+B) – cena 1000 dinara, tekst karte za SMS poruku C7
+            </li>
+          </ul>
+
+          <h2>MESEČNA KARTA – 30 DANA</h2>
+          <ul>
+            <li>Zona A – cena 2200 dinara, tekst karte za SMS poruku A30</li>
+            <li>Zona B – cena 2200 dinara, tekst karte za SMS poruku B30</li>
+            <li>
+              Zona C (A+B) – cena 3300 dinara, tekst karte za SMS poruku C30
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="/en/instructions.html" class="text-white">
+        <div class="language bg-danger p-1 position-fixed">
+          <img
+            src="images/flags/gb.png"
+            alt="English"
+            width="20"
+            class="mr-2"
+          />
+          <span>English</span>
+        </div>
+      </a>
+      <div class="d-flex p-3 text-white my-3 rounded">
+        <div class="row">
+          <!-- SET YOUR LOGO HERE -->
+          <figure class="figure col-lg-3">
+            <img
+              src="https://via.placeholder.com/512x512.png/000000/FFFFFF/?text=APP%20LOGO"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+          <div class="col-lg-9">
+            <h1>Beograd+ Karte</h1>
+            <p class="lead">
+              Beograd+ je mobilna aplikacija koja olakšava kupovinu karata za
+              gradski prevoz u Beogradu. Aplikacija je kompatibilna sa novim
+              Beograd Plus sistemom naplate koji je krenuo u Beogradu u maju
+              2023. godine.
+            </p>
+            <p>
+              <img src="/images/badges/ios.svg" width="35%" /><img
+                src="https://cdn.rawgit.com/steverichey/google-play-badge-svg/master/img/en_get.svg"
+                width="43%"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-muted py-5" style="background-color: black">
+      <div class="container text-white">
+        <ul>
+          <li>
+            <a href="/index.html">Home</a>
+          </li>
+          <li>
+            <a href="mailto:ljubo@gmail.com">Kontakt</a>
+          </li>
+        </ul>
+        <p>Copyright @ 2023 Šakal Software. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+         -->
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="rs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="Beograd plus" />
+    <meta
+      name="description"
+      content="Beograd plus mobilna aplikacija. Kupovina karata za gradski prevoz Beograd."
+    />
+    <meta
+      name="keywords"
+      content="Beograd prevoz, GSP, Beograd plus sms, 9011"
+    />
+    <meta name="author" content="Sakal Software" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Beograd plus</title>
+    <!--add animation: gradient 60s ease infinite; to animation gradient, custom gradient here: https://cssgradient.io/-->
+    <style>
+      body {
+        background: rgb(255, 64, 129);
+        background: linear-gradient(150deg, #002079 0%, #c3010d 30%);
+        background-size: 400% 400%;
+      }
+      .language {
+        position: fixed;
+        top: 0;
+        right: 5px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <main class="container">
+      <div class="d-flex p-3 text-white my-3 rounded">
+        <div class="col-lg-9">
+          <h1>BELGRADE PUBLIC TRANSPORT TICKETS</h1>
+          <p>
+            The purchase of tickets for public transportation is done by sending
+            an SMS to the number 9011, and in the message text, we enter the
+            ticket text depending on the type of ticket we want to purchase.
+            There are several types of tickets: A ticket valid for 90 minutes, a
+            daily ticket valid for 24 hours, a weekly ticket, and a monthly
+            ticket. Additionally, the city is divided into two zones, Zone A and
+            Zone B, for which separate tickets can be purchased, as well as the
+            option to purchase a ticket valid for both zones.
+          </p>
+          <p>There are several types of tickets:</p>
+          <h2>TIME TICKET - 90 MINUTES</h2>
+          <ul>
+            <li>Zone A - price 50 RSD, ticket text for SMS message A90</li>
+            <li>Zone B - price 50 RSD, ticket text for SMS message B90</li>
+            <li>
+              Zone C (A+B) - price 100 RSD, ticket text for SMS message C90
+            </li>
+          </ul>
+
+          <h2>DAILY TICKET - 1 DAY</h2>
+          <ul>
+            <li>Zone A - price 120 RSD, ticket text for SMS message A1</li>
+            <li>Zone B - price 120 RSD, ticket text for SMS message B1</li>
+            <li>
+              Zone C (A+B) - price 150 RSD, ticket text for SMS message C1
+            </li>
+          </ul>
+
+          <h2>WEEKLY TICKET - 7 DAYS</h2>
+          <ul>
+            <li>Zone A - price 800 RSD, ticket text for SMS message A7</li>
+            <li>Zone B - price 800 RSD, ticket text for SMS message B7</li>
+            <li>
+              Zone C (A+B) - price 1000 RSD, ticket text for SMS message C7
+            </li>
+          </ul>
+
+          <h2>MONTHLY TICKET - 30 DAYS</h2>
+          <ul>
+            <li>Zone A - price 2200 RSD, ticket text for SMS message A30</li>
+            <li>Zone B - price 2200 RSD, ticket text for SMS message B30</li>
+            <li>
+              Zone C (A+B) - price 3300 RSD, ticket text for SMS message C30
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="/uputstvo.html" class="text-white">
+         <div class="language bg-danger p-1 position-fixed">
+            <img src="/images/flags/sr.png" alt="Srbija" width="20" class="mr-2">
+            <span>srpski</span>
+         </div>
+      </a>
+      <div class="d-flex p-3 text-white my-3 rounded">
+        <div class="row">
+          <figure class="figure col-lg-3">
+            <img
+              src="https://via.placeholder.com/512x512.png/000000/FFFFFF/?text=APP%20LOGO"
+              class="figure-img img-fluid rounded"
+            />
+          </figure>
+          <div class="col-lg-9">
+            <h1>Application</h1>
+            <p class="lead">
+              Beograd+ is a mobile app that enables you to buy bus tickets for
+              public transportation in Belgrade, Serbia. Application is
+              compatible with new Belgrade Plus (Beograd Plus) ticketing system
+              that started in May 2023.
+            </p>
+            <p>
+              <img src="/images/badges/ios.svg" width="35%" /><img
+                src="https://cdn.rawgit.com/steverichey/google-play-badge-svg/master/img/en_get.svg"
+                width="43%"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="text-muted py-5" style="background-color: black">
+      <div class="container text-white">
+        <ul>
+          <li>
+            <a href="/en/index.html">Home</a>
+          </li>
+          <li>
+            <a href="mailto:ljubo@gmail.com">Kontakt</a>
+          </li>
+        </ul>
+        <p>Copyright @ 2023 Šakal Software. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+         -->
+  </body>
+</html>
