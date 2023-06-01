@@ -51,7 +51,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   void sendEmail() {
     final Uri emailLaunchUri = Uri(
       scheme: 'mailto',
-      path: 'ljubolukovic93@gmail.com',
+      path: 'sakalsoftware5@gmail.com',
       query: encodeQueryParameters(
           <String, String>{'subject': 'Kontakt', 'body': 'Napisite poruku...'}),
     );
@@ -94,12 +94,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 padding: EdgeInsets.all(16),
                 child: Center(child: Text('O nama'))),
             ListTile(
-              title: const Text('Vebajt'),
+              title: const Text('Vebsajt'),
               onTap: () => openUrl(
                   'facebook.com', 'groups/applesrbija/posts/2055778947929949'),
             ),
             ListTile(
-              title: const Text('Email: ljubo@gmail.com'),
+              title: const Text('Email kontakt'),
               onTap: () => sendEmail(),
             ),
           ]).toList(),
