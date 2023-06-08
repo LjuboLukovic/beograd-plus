@@ -3,6 +3,7 @@ import 'model/city_zone.dart';
 import 'model/ticket.dart';
 import 'model/ticket_type.dart';
 
+const String API_BASE_URL = 'https://beogradplus.rs/';
 const String SMS_NUMBER = "9011";
 
 List<Ticket> ZONE_A_TICKETS = [

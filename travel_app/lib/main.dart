@@ -1,3 +1,4 @@
+import 'package:beograd_plus/src/widgets/intro_screen.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -34,7 +35,7 @@ class TravelApp extends StatelessWidget {
           secondary: const Color(0xFFC3010D),
         ),
       ),
-      home: const HomePage(title: 'Beograd+ Karte'),
+      home: const IntroPage()
     );
   }
 }
