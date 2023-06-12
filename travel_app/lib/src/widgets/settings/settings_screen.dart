@@ -30,7 +30,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   void checkAndLaunchUri(Uri uri) {
     canLaunchUrl(uri).then((canLaunch) {
       if (canLaunch) {
-        launchUrl(uri);
+        launchUrl(uri, mode: LaunchMode.externalApplication);
       } else {
         SnackBar snackBar = const SnackBar(
             content: Text('Zabranili ste otvaranje linkova iz aplikacije!'));
@@ -83,20 +83,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ? ListTile(
                     title: const Text('App Store'),
                     onTap: () => openUrl(
-                        'apps.apple.com', 'us/app/parking-servis/id1525718469'),
+                        'apps.apple.com', 'app/rs.beogradplus.travelApp'),
                   )
                 : ListTile(
                     title: const Text('Play Store'),
-                    onTap: () => openUrl('play.google.com',
-                        'store/apps/details?id=com.revolut.revolut'),
+                    onTap: () => openUrl(
+                        'market://details?id=rs.beogradplus.travel_app', ''),
                   ),
             const Padding(
                 padding: EdgeInsets.all(16),
                 child: Center(child: Text('O nama'))),
             ListTile(
               title: const Text('Vebsajt'),
-              onTap: () => openUrl(
-                  'facebook.com', 'groups/applesrbija/posts/2055778947929949'),
+              onTap: () => openUrl('beogradplus.rs', ''),
             ),
             ListTile(
               title: const Text('Email kontakt'),

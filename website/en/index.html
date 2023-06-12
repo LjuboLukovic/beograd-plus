@@ -1,87 +1,141 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="title" content="Belgrade bus tickets">
-      <meta name="description" content="Belgrade plus (Beograd plus) mobile application. Buy bus tickets for Belgrade public transportation.">
-      <meta name="keywords" content="How to buy bus tickets in Belgrade?, Belgrade bus tickets, Belgrade public transport, 9011">
-      <meta name="author" content="Sakal Software">
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-      <title>Belgrade plus</title>
-      <!--add animation: gradient 60s ease infinite; to animation gradient, custom gradient here: https://cssgradient.io/-->
-      <style>
-         body {
-         background: rgb(255,64,129);
-         background: linear-gradient(150deg, #002079 0%, #C3010D 30%);
-         background-size: 400% 400%;
-         }
-         .language {
-         position: fixed;
-         top: 0;
-         right: 5px;
-         }
-         @keyframes gradient {
-         0% {
-         background-position: 0% 50%;
-         }
-         50% {
-         background-position: 100% 50%;
-         }
-         100% {
-         background-position: 0% 50%;
-         }
-         }
-      </style>
-   </head>
-   <body>
-      <main class="container">
-         <div class="d-flex p-3 text-white rounded">
-            <div class="row">
-               <!-- SET YOUR LOGO HERE -->
-               <figure class="figure col-lg-3"><img src="https://via.placeholder.com/512x512.png/000000/FFFFFF/?text=APP%20LOGO" class="figure-img img-fluid rounded"></figure>
-               <div class="col-lg-9">
-                  <h1>Belgrade Bus Tickets</h1>
-                  <p class="lead">Beograd+ is a mobile app that enables you to buy bus tickets for public transportation in Belgrade, Serbia. Application is compatible with new Belgrade Plus (Beograd Plus) ticketing system that started in May 2023.</p>
-                  <p><img src="/images/badges/ios.svg" width="35%"><img src="https://cdn.rawgit.com/steverichey/google-play-badge-svg/master/img/en_get.svg" width="43%"></p>
-               </div>
-            </div>
-         </div>
-         <a href="/index.html" class="text-white">
-            <div class="language bg-danger p-1 position-fixed">
-               <img src="/images/flags/sr.png" alt="Srbija" width="20" class="mr-2">
-               <span>srpski</span>
-            </div>
-         </a>
-         <div class="my-3 p-3 rounded text-white">
-            <h1 class="pb-2 mb-0 text-white">Application</h1>
-            <p>
-               <br>
-               You don't have to remember zones, numbers or codes, app has a simple UI. After you select ticket type you will be prompted to your default SMS application and you just click Send to activate your ticket.
-               <br>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="Belgrade bus tickets" />
+    <meta
+      name="description"
+      content="Belgrade plus (Beograd plus) mobile application. Buy bus tickets for Belgrade public transportation."
+    />
+    <meta
+      name="keywords"
+      content="How to buy bus tickets in Belgrade?, Belgrade bus tickets, Belgrade public transport, 9011"
+    />
+    <meta name="author" content="Sakal Software" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <title>Belgrade plus</title>
+    <!--add animation: gradient 60s ease infinite; to animation gradient, custom gradient here: https://cssgradient.io/-->
+    <style>
+      body {
+        background: rgb(255, 64, 129);
+        background: linear-gradient(150deg, #002079 0%, #c3010d 30%);
+        background-size: 400% 400%;
+      }
+      .language {
+        position: fixed;
+        top: 0;
+        right: 5px;
+      }
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="d-flex p-3 text-white rounded">
+        <div class="row">
+          <figure class="figure col-lg-3">
+            <img
+              src="/images/logo.png"
+              class="figure-img img-fluid rounded"
+              alt="Beograd+ Logo"
+            />
+          </figure>
+          <div class="col-lg-9">
+            <h1>Belgrade Bus Tickets</h1>
+            <p class="lead">
+              Beograd+ is a mobile app that enables you to buy bus tickets for
+              public transportation in Belgrade, Serbia. Application is
+              compatible with new Belgrade Plus (Beograd Plus) ticketing system
+              that started in May 2023.
             </p>
-            <!-- SET YOUR SCREENSHOTS HERE -->
-            <div class="row align-items-center">
-               <figure class="figure col-lg-3"><img src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%201" class="figure-img img-fluid rounded"></figure>
-               <figure class="figure col-lg-3"><img src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%202" class="figure-img img-fluid rounded"></figure>
-               <figure class="figure col-lg-3"><img src="https://via.placeholder.com/1242x2208.png/000000/FFFFFF/?text=SCREENSHOT%203" class="figure-img img-fluid rounded"></figure>
-            </div>
-         </div>
-      </main>
-      <footer class="text-muted py-5" style="background-color: black">
-         <div class="container text-white">
-           <ul>
-             <li>
-               <a href="/en/instructions.html">Instructions</a>
-             </li>
-             <li>
-               <a href="mailto:sakalsoftware5@gmail.com">Kontakt</a>
-             </li>
-           </ul>
-           <p>Copyright @ 2023 Šakal Software. All rights reserved.</p>
-         </div>
-       </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-   </body>
+            <p>
+              <img src="/images/badges/ios.svg" width="35%" /><img
+                src="https://cdn.rawgit.com/steverichey/google-play-badge-svg/master/img/en_get.svg"
+                width="43%"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="/index.html" class="text-white">
+        <div class="language bg-danger p-1 position-fixed">
+          <img
+            src="/images/flags/sr.png"
+            alt="Srbija"
+            width="20"
+            class="mr-2"
+          />
+          <span>srpski</span>
+        </div>
+      </a>
+      <div class="my-3 p-3 rounded text-white">
+        <h1 class="pb-2 mb-0 text-white">Application</h1>
+        <p>
+          <br />
+          You don't have to remember zones, numbers or codes, app has a simple
+          UI. After you select ticket type you will be prompted to your default
+          SMS application and you just click Send to activate your ticket.
+          <br />
+        </p>
+        <div class="row align-items-center">
+          <figure class="figure col-lg-3">
+            <img
+              src="/images/1.png"
+              class="figure-img img-fluid rounded"
+              alt="Screenshot 1"
+            />
+          </figure>
+          <figure class="figure col-lg-3">
+            <img
+              src="/images/2.png"
+              class="figure-img img-fluid rounded"
+              alt="Screenshot 2"
+            />
+          </figure>
+          <figure class="figure col-lg-3">
+            <img
+              src="/images/8.png"
+              class="figure-img img-fluid rounded"
+              alt="Screenshot 3"
+            />
+          </figure>
+        </div>
+      </div>
+    </main>
+    <footer class="text-muted py-5" style="background-color: black">
+      <div class="container text-white">
+        <ul>
+          <li>
+            <a href="/en/instructions.html">Instructions</a>
+          </li>
+          <li>
+            <a href="mailto:sakalsoftware5@gmail.com">Kontakt</a>
+          </li>
+        </ul>
+        <p>Copyright @ 2023 Šakal Software. All rights reserved.</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
