@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../model/city_zone.dart';
 
 class ZoneChooserModal extends StatelessWidget {
@@ -17,7 +18,7 @@ class ZoneChooserModal extends StatelessWidget {
             color: Colors.white,
           ),
           child: Text(
-            'Izaberite zonu',
+            AppLocalizations.of(context)!.selectZone,
             style: Theme.of(context).textTheme.titleLarge,
             textAlign: TextAlign.start,
           ),
@@ -27,22 +28,20 @@ class ZoneChooserModal extends StatelessWidget {
             padding: const EdgeInsets.only(top: 16, bottom: 16),
             child: ListView(
               shrinkWrap: true,
-              children: ListTile.divideTiles(
-                  context: context,
-                  tiles: [
-                    ListTile(
-                      title: const Text('A'),
-                      onTap: () => Navigator.pop(context, CityZone.A),
-                    ),
-                    ListTile(
-                      title: const Text('B'),
-                      onTap: () => Navigator.pop(context, CityZone.B),
-                    ),
-                    ListTile(
-                      title: const Text('C (A+B)'),
-                      onTap: () => Navigator.pop(context, CityZone.C),
-                    ),
-                  ]).toList(),
+              children: ListTile.divideTiles(context: context, tiles: [
+                ListTile(
+                  title: const Text('A'),
+                  onTap: () => Navigator.pop(context, CityZone.A),
+                ),
+                ListTile(
+                  title: const Text('B'),
+                  onTap: () => Navigator.pop(context, CityZone.B),
+                ),
+                ListTile(
+                  title: const Text('C (A+B)'),
+                  onTap: () => Navigator.pop(context, CityZone.C),
+                ),
+              ]).toList(),
             )),
       ]),
     );

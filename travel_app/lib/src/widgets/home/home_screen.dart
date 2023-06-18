@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import '../../util/preference_utils.dart';
 import '../help/help_screen.dart';
 import '../settings/settings_screen.dart';
@@ -77,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                       SelectedZone(currentZone!, setCurrentZone),
                       const Text('SMS: 9011'),
                       TicketsList(PRICE_LIST[currentZone]!),
-                      const Text('** Noćni prevoz od 00:00 do 04:00 je besplatan!'),
+                      Text(AppLocalizations.of(context)!.nightRides),
                     ]
                   ],
                 )));

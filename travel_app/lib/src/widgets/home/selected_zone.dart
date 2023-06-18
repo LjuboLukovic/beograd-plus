@@ -1,5 +1,6 @@
 import 'package:beograd_plus/src/model/city_zone.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'zone_chooser.dart';
 
 const List<String> zones = <String>['A', 'B', 'C (A+B)'];
@@ -22,7 +23,7 @@ class _SelectedZoneState extends State<SelectedZone> {
     return Row(children: [
       const Padding(padding: EdgeInsets.only(left: 16)),
       Text(
-        'Izabrana zona: ',
+        AppLocalizations.of(context)!.selectedZone,
         style: Theme.of(context).textTheme.bodyLarge,
       ),
       const Padding(padding: EdgeInsets.only(right: 8)),

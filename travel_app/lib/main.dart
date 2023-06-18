@@ -2,6 +2,7 @@ import 'package:beograd_plus/src/widgets/intro_screen.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
@@ -11,7 +12,7 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-    if (kDebugMode) {
+  if (kDebugMode) {
     await FirebaseCrashlytics.instance.setCrashlyticsCollectionEnabled(false);
   } else {
     FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
@@ -27,14 +28,22 @@ class TravelApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Beograd+ Karte',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary: const Color(0xFF002079),
-          secondary: const Color(0xFFC3010D),
+        title: 'Beograd+ Karte',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSwatch().copyWith(
+            primary: const Color(0xFF002079),
+            secondary: const Color(0xFFC3010D),
+          ),
         ),
-      ),
-      home: const IntroPage()
-    );
+        localizationsDelegates: const [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: const [
+          Locale('sh'), // srpski
+          Locale('en'), // English
+        ],
+        home: const IntroPage());
   }
 }

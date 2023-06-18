@@ -1,0 +1,10 @@
+{
+   "@@locale":"en",
+   "title":"Belgrade+ Tickets",
+   "loading":"Loading, please wait...",
+    "introLoading":"Application is loading, please wait...",
+    "updateMessage":"You have to update the application, there were some breaking changes recently and this version is not working properly anymore! Thanks.",
+    "nightRides":"** Night transport from 00:00 to 04:00 is free!",
+    "selectZone": "Select zone",
+    "selectedZone": "Selected zone: "
+}

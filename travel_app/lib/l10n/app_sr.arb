@@ -1,0 +1,10 @@
+{
+   "@@locale":"sr",
+   "title":"Beograd+ Karte",
+   "loading":"Učitavanje, molimo sačekajte...",
+    "introLoading":"Aplikacija se učitava. Molimo sačekajte...",
+    "updateMessage":"Morate ažurirate aplikaciju da biste nastavili, jer je došlo do nekih kritičnih promena.",
+    "nightRides":"** Noćni prevoz od 00:00 do 04:00 je besplatan!",
+    "selectZone": "Izaberite zonu",
+    "selectedZone": "Izabrana zona: "
+}

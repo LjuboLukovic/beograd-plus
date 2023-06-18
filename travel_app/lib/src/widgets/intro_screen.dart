@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:beograd_plus/src/api/api_config.dart';
 import 'package:beograd_plus/src/model/app_info.dart';
 import 'package:beograd_plus/src/widgets/home/home_screen.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -42,27 +43,27 @@ class _IntroPageState extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
     if (!isLoading && !isThisVersionDeprecated) {
-      return const HomePage(title: 'Beograd+ Karte');
+      return HomePage(title: AppLocalizations.of(context)!.title);
     }
     return Scaffold(
         body: Center(
             child: Column(
       children: isThisVersionDeprecated
-          ? const [
+          ? [
               Padding(
-                padding: EdgeInsets.only(bottom: 16),
+                padding: const EdgeInsets.only(bottom: 16),
                 child: Text(
-                    'Morate ažurirate aplikaciju da biste nastavili, jer je došlo do nekih kritičnih promena.',
-                    style: TextStyle(
+                    AppLocalizations.of(context)!.introLoading,
+                    style: const TextStyle(
                         fontWeight: FontWeight.bold, color: Colors.redAccent)),
               ),
-              CircularProgressIndicator()
+              const CircularProgressIndicator()
             ]
-          : const [
+          : [
               Padding(
-                  padding: EdgeInsets.only(bottom: 16),
-                  child: Text('Aplikacija se učitava. Molimo sačekajte...')),
-              CircularProgressIndicator()
+                  padding: const EdgeInsets.only(bottom: 16),
+                  child: Text(AppLocalizations.of(context)!.loading)),
+              const CircularProgressIndicator()
             ],
     )));
   }
