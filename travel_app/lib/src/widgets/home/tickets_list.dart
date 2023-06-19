@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../constants.dart';
 import '../../model/ticket.dart';
@@ -14,8 +15,8 @@ class TicketsList extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 8, bottom: 8),
       child: tickets.isEmpty
-          ? const Text(
-              'Nema tiketa za izabranu zonu',
+          ? Text(
+              AppLocalizations.of(context)!.noTicketsMessage,
               textAlign: TextAlign.center,
             )
           : ListView.builder(
@@ -45,8 +46,9 @@ class TicketsList extends StatelessWidget {
               if (canLaunch) {
                 launchUrl(smsLaunchUri);
               } else {
-                SnackBar snackBar = const SnackBar(
-                    content: Text('Dozvolite pristup SMS aplikaciji'));
+                SnackBar snackBar = SnackBar(
+                    content:
+                        Text(AppLocalizations.of(context)!.noTicketsMessage));
                 ScaffoldMessenger.of(context).showSnackBar(snackBar);
               }
             });
@@ -79,7 +81,7 @@ class TicketsList extends StatelessWidget {
                     child: Padding(
                         padding: const EdgeInsets.only(top: 8),
                         child: Text(
-                          'Cena: ${ticket.price} RSD',
+                          '${AppLocalizations.of(context)!.price}: ${ticket.price} RSD',
                           textAlign: TextAlign.end,
                           style: Theme.of(context).textTheme.bodyMedium,
                         )))

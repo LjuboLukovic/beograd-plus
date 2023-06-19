@@ -2,7 +2,7 @@ import 'package:beograd_plus/src/widgets/intro_screen.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/foundation.dart' show kDebugMode;
 import 'package:flutter/material.dart';
 import 'firebase_options.dart';
@@ -35,13 +35,9 @@ class TravelApp extends StatelessWidget {
             secondary: const Color(0xFFC3010D),
           ),
         ),
-        localizationsDelegates: const [
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: const [
-          Locale('sh'), // srpski
+          Locale('sr'), // srpski
           Locale('en'), // English
         ],
         home: const IntroPage());

@@ -6,5 +6,12 @@
     "updateMessage":"You have to update the application, there were some breaking changes recently and this version is not working properly anymore! Thanks.",
     "nightRides":"** Night transport from 00:00 to 04:00 is free!",
     "selectZone": "Select zone",
-    "selectedZone": "Selected zone: "
+    "selectedZone": "Selected zone: ",
+    "noTicketsMessage": "No tickets for selected zone",
+    "price": "Price",
+    "permissionSms": "Allow access to SMS application",
+    "zones": "Zones",
+    "zoneA": "Zone A",
+    "zoneB": "Zone B",
+    "zoneC": "Zone C (A+B)"
 }

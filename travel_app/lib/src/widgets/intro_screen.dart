@@ -52,8 +52,7 @@ class _IntroPageState extends State<IntroPage> {
           ? [
               Padding(
                 padding: const EdgeInsets.only(bottom: 16),
-                child: Text(
-                    AppLocalizations.of(context)!.introLoading,
+                child: Text(AppLocalizations.of(context)!.introLoading,
                     style: const TextStyle(
                         fontWeight: FontWeight.bold, color: Colors.redAccent)),
               ),

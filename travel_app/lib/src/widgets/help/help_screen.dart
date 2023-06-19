@@ -1,5 +1,6 @@
-import 'package:beograd_plus/src/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:beograd_plus/src/constants.dart';
 
 class HelpScreen extends StatefulWidget {
   const HelpScreen({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class _HelpScreenState extends State<HelpScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Zone\n\n',
+                        AppLocalizations.of(context)!.zones,
                         style: Theme.of(context).textTheme.titleLarge,
                         textAlign: TextAlign.start,
                       ),
@@ -33,7 +34,7 @@ class _HelpScreenState extends State<HelpScreen> {
                               ))),
                       const Padding(padding: EdgeInsets.only(top: 16)),
                       Text(
-                        'Zona A\n\n',
+                        AppLocalizations.of(context)!.zoneA + '\n\n',
                         style: Theme.of(context).textTheme.bodyLarge,
                         textAlign: TextAlign.start,
                       ),
@@ -41,7 +42,7 @@ class _HelpScreenState extends State<HelpScreen> {
                           .map((municipality) => Text('\u2022 $municipality')),
                       const Padding(padding: EdgeInsets.only(top: 16)),
                       Text(
-                        'Zona B\n\n',
+                        AppLocalizations.of(context)!.zoneB + '\n\n',
                         style: Theme.of(context).textTheme.bodyLarge,
                         textAlign: TextAlign.start,
                       ),
@@ -49,7 +50,7 @@ class _HelpScreenState extends State<HelpScreen> {
                           .map((municipality) => Text('\u2022 $municipality')),
                       const Padding(padding: EdgeInsets.only(top: 16)),
                       Text(
-                        'Zona C (A+B)\n\n',
+                        AppLocalizations.of(context)!.zoneC + '\n\n',
                         style: Theme.of(context).textTheme.bodyLarge,
                         textAlign: TextAlign.start,
                       ),
