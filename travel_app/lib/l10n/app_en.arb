@@ -1,17 +1,36 @@
 {
-   "@@locale":"en",
-   "title":"Belgrade+ Tickets",
-   "loading":"Loading, please wait...",
-    "introLoading":"Application is loading, please wait...",
-    "updateMessage":"You have to update the application, there were some breaking changes recently and this version is not working properly anymore! Thanks.",
-    "nightRides":"** Night transport from 00:00 to 04:00 is free!",
-    "selectZone": "Select zone",
-    "selectedZone": "Selected zone: ",
-    "noTicketsMessage": "No tickets for selected zone",
-    "price": "Price",
-    "permissionSms": "Allow access to SMS application",
-    "zones": "Zones",
-    "zoneA": "Zone A",
-    "zoneB": "Zone B",
-    "zoneC": "Zone C (A+B)"
+  "@@locale": "en",
+  "title": "Belgrade+ Tickets",
+  "loading": "Loading, please wait...",
+  "introLoading": "Application is loading, please wait...",
+  "updateMessage": "You have to update the application, there were some breaking changes recently and this version is not working properly anymore! Thanks.",
+  "nightRides": "** Night transport from 00:00 to 04:00 is free!",
+  "selectZone": "Select zone",
+  "selectedZone": "Selected zone: ",
+  "noTicketsMessage": "No tickets for selected zone",
+  "price": "Price",
+  "permissionSms": "Allow access to SMS application",
+  "help": "Help",
+  "zones": "Zones",
+  "zoneA": "Zone A",
+  "zoneB": "Zone B",
+  "zoneC": "Zone C (A+B)",
+  "ticketTitle": "{ticketType, select, HOUR{Time ticket (90 min)} DAY{Daily ticket} WEEK{Weekly ticket} MONTH{Monthly ticket} other{Ticket}}",
+  "@ticketTitle": {
+    "description": "Title for different ticket types",
+    "placeholders": {
+      "ticketType": {
+        "type": "String"
+      }
+    }
+  },
+  "ticketDescription": "{ticketType, select, HOUR{Valid for next 90 minutes} DAY{Until 23:59 of the current day} WEEK{Valid for next 7 days} MONTH{Valid until end of the month} other{Valid}}",
+  "@ticketDescription": {
+    "description": "Description for different ticket types",
+    "placeholders": {
+      "ticketType": {
+        "type": "String"
+      }
+    }
+  }
 }

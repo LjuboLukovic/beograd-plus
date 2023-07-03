@@ -83,12 +83,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ? ListTile(
                     title: const Text('App Store'),
                     onTap: () => openUrl(
-                        'apps.apple.com', 'app/rs.beogradplus.travelApp'),
+                        'apps.apple.com', '/app/rs.beogradplus.travelApp'),
                   )
                 : ListTile(
                     title: const Text('Play Store'),
                     onTap: () => openUrl(
-                        'market://details?id=rs.beogradplus.travel_app', ''),
+                        'play.google.com', '/store/apps/details?id=rs.beogradplus.travel_app'),
                   ),
             const Padding(
                 padding: EdgeInsets.all(16),

@@ -3,7 +3,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../constants.dart';
 import '../../model/ticket.dart';
-import '../../util/ticket_util.dart';
+import '../../model/ticket_type.dart';
 
 class TicketsList extends StatelessWidget {
   List<Ticket> tickets;
@@ -69,11 +69,13 @@ class TicketsList extends StatelessWidget {
                   ],
                 ),
                 Text(
-                  getLabelFromType(ticket.type),
+                  AppLocalizations.of(context)!.ticketTitle(TicketTypeToJson[ticket.type]!),
+                  // getLabelFromType(ticket.type),
                   style: Theme.of(context).textTheme.titleLarge,
                 ),
                 Text(
-                  getDescriptionFromType(ticket.type),
+                  AppLocalizations.of(context)!.ticketDescription(TicketTypeToJson[ticket.type]!),
+                  // getDescriptionFromType(ticket.type),
                   style: Theme.of(context).textTheme.bodySmall,
                 ),
                 SizedBox(

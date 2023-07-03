@@ -13,7 +13,7 @@ class _HelpScreenState extends State<HelpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Pomoć')),
+        appBar: AppBar(title: Text(AppLocalizations.of(context)!.help)),
         body: SingleChildScrollView(
             child: Padding(
                 padding: EdgeInsets.all(16),

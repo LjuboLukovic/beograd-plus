@@ -1,17 +1,36 @@
 {
-   "@@locale":"sr",
-   "title":"Beograd+ Karte",
-   "loading":"Učitavanje, molimo sačekajte...",
-    "introLoading":"Aplikacija se učitava. Molimo sačekajte...",
-    "updateMessage":"Morate ažurirate aplikaciju da biste nastavili, jer je došlo do nekih kritičnih promena.",
-    "nightRides":"** Noćni prevoz od 00:00 do 04:00 je besplatan!",
-    "selectZone": "Izaberite zonu",
-    "selectedZone": "Izabrana zona: ",
-    "noTicketsMessage": "Nema tiketa za izabranu zonu",
-    "price": "Cena",
-    "permissionSms": "Dozvolite pristup SMS aplikaciji!",
-    "zones": "Zone",
-    "zoneA": "Zona A",
-    "zoneB": "Zona B",
-    "zoneC": "Zona C (A+B)"
+  "@@locale": "sr",
+  "title": "Beograd+ Karte",
+  "loading": "Učitavanje, molimo sačekajte...",
+  "introLoading": "Aplikacija se učitava. Molimo sačekajte...",
+  "updateMessage": "Morate ažurirate aplikaciju da biste nastavili, jer je došlo do nekih kritičnih promena.",
+  "nightRides": "** Noćni prevoz od 00:00 do 04:00 je besplatan!",
+  "selectZone": "Izaberite zonu",
+  "selectedZone": "Izabrana zona: ",
+  "noTicketsMessage": "Nema tiketa za izabranu zonu",
+  "price": "Cena",
+  "permissionSms": "Dozvolite pristup SMS aplikaciji!",
+  "help": "Pomoć",
+  "zones": "Zone",
+  "zoneA": "Zona A",
+  "zoneB": "Zona B",
+  "zoneC": "Zona C (A+B)",
+  "ticketTitle": "{ticketType, select, HOUR{Vremenska karta (90 min)} DAY{Dnevna karta} WEEK{Nedeljna karta} MONTH{Mesečna karta} other{Karta}}",
+  "@ticketTitle": {
+    "description": "Title for different ticket types",
+    "placeholders": {
+      "ticketType": {
+        "type": "String"
+      }
+    }
+  },
+  "ticketDescription": "{ticketType, select, HOUR{90 minuta od kupovine} DAY{Do 23:59 tekućeg dana} WEEK{Važi narednih 7 dana} MONTH{Važi do kraja tekućeg meseca} other{Karta}}",
+  "@ticketDescription": {
+    "description": "Description for different ticket types",
+    "placeholders": {
+      "ticketType": {
+        "type": "String"
+      }
+    }
+  }
 }
