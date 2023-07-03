@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:beograd_plus/src/widgets/settings/zone_tabs.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../util/uri_utils.dart';
@@ -61,23 +62,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: const Text('Podešavanja')),
+        appBar: AppBar(title: Text(AppLocalizations.of(context)!.settings)),
         body: ListView(
           shrinkWrap: true,
           children: ListTile.divideTiles(context: context, tiles: [
-            const Padding(
-                padding: EdgeInsets.all(16),
-                child: Center(child: Text('Zona'))),
+            Padding(
+                padding: const EdgeInsets.all(16),
+                child: Center(child: Text(AppLocalizations.of(context)!.selectedZone))),
             const Padding(
                 padding: EdgeInsets.fromLTRB(4, 16, 4, 16),
                 child: Center(
                   child: ZoneTabs(),
                 )),
-            const Padding(
-                padding: EdgeInsets.all(16),
-                child: Center(child: Text('Aplikacija'))),
+            Padding(
+                padding: const EdgeInsets.all(16),
+                child: Center(child: Text(AppLocalizations.of(context)!.application))),
             ListTile(
-              title: Text('Verzija: v$version ($buildNumber)'),
+              title: Text('${AppLocalizations.of(context)!.version}: v$version ($buildNumber)'),
             ),
             Platform.isIOS
                 ? ListTile(
@@ -90,15 +91,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     onTap: () => openUrl(
                         'play.google.com', '/store/apps/details?id=rs.beogradplus.travel_app'),
                   ),
-            const Padding(
-                padding: EdgeInsets.all(16),
-                child: Center(child: Text('O nama'))),
+            Padding(
+                padding: const EdgeInsets.all(16),
+                child: Center(child: Text(AppLocalizations.of(context)!.aboutUs))),
             ListTile(
-              title: const Text('Vebsajt'),
+              title: Text(AppLocalizations.of(context)!.website),
               onTap: () => openUrl('beogradplus.rs', ''),
             ),
             ListTile(
-              title: const Text('Email kontakt'),
+              title: Text(AppLocalizations.of(context)!.emailContact),
               onTap: () => sendEmail(),
             ),
           ]).toList(),

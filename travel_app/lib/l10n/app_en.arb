@@ -32,5 +32,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "settings": "Settings",
+  "application": "Application",
+  "version": "Version",
+  "aboutUs": "About us",
+  "emailContact": "Email contakt",
+  "website": "Website"
 }

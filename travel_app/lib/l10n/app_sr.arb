@@ -32,5 +32,11 @@
         "type": "String"
       }
     }
-  }
+  },
+  "settings": "Podešavanja",
+  "application": "Aplikacija",
+  "version": "Verzija",
+  "aboutUs": "O nama",
+  "emailContact": "Email kontakt",
+  "website": "Vebsajt"
 }
