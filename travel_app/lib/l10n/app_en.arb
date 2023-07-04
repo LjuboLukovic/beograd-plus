@@ -37,6 +37,7 @@
   "application": "Application",
   "version": "Version",
   "aboutUs": "About us",
-  "emailContact": "Email contakt",
-  "website": "Website"
+  "emailContact": "Email contact",
+  "website": "Website",
+  "appNotice": "Notice: This is not an official app, just free service that we wanted to offer to make it easier to buy tickets for Belgrade public transport"
 }

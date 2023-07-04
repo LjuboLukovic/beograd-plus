@@ -16,13 +16,33 @@ class _HelpScreenState extends State<HelpScreen> {
         appBar: AppBar(title: Text(AppLocalizations.of(context)!.help)),
         body: SingleChildScrollView(
             child: Padding(
-                padding: EdgeInsets.all(16),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
+                        'Poslali ste poruku, ali Vam stiže odgovor: "Ova usluga Vam nije omogućena"\n',
+                        style: Theme.of(context).textTheme.titleMedium,
+                        textAlign: TextAlign.start,
+                      ),
+                      Text(
+                        'Morate kontaktirati Vašeg mobilnog operatera i proveriti sa njima, verovatno vam je zabranjeno slanje poruka na četvorocifrene brojeve.\n',
+                        style: Theme.of(context).textTheme.bodyLarge,
+                        textAlign: TextAlign.start,
+                      ),
+                                            Text(
+                        'Imate reklamaciju za kupovinu karte preko SMS poruke\n',
+                        style: Theme.of(context).textTheme.titleMedium,
+                        textAlign: TextAlign.start,
+                      ),
+                      Text(
+                        'Pošaljite email sa detaljima na mobile@comtrade.com.\n',
+                        style: Theme.of(context).textTheme.bodyLarge,
+                        textAlign: TextAlign.start,
+                      ),
+                      Text(
                         AppLocalizations.of(context)!.zones,
-                        style: Theme.of(context).textTheme.titleLarge,
+                        style: Theme.of(context).textTheme.titleMedium,
                         textAlign: TextAlign.start,
                       ),
                       Center(

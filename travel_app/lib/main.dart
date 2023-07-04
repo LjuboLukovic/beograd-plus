@@ -40,6 +40,16 @@ class TravelApp extends StatelessWidget {
           Locale('sr'), // srpski
           Locale('en'), // English
         ],
+        localeResolutionCallback: (deviceLocale, supportedLocales) {
+          for (var locale in supportedLocales) {
+            if (locale.languageCode == deviceLocale!.languageCode) {
+              return deviceLocale;
+            }
+          }
+          return supportedLocales.first;
+        },
         home: const IntroPage());
   }
 }
+
+

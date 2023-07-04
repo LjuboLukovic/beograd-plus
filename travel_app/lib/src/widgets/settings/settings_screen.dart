@@ -102,6 +102,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
               title: Text(AppLocalizations.of(context)!.emailContact),
               onTap: () => sendEmail(),
             ),
+            const ListTile(
+              title: Text('Šakal Software'),
+            ),
+            Padding(
+                padding: const EdgeInsets.all(16),
+                child: Center(child: Text(AppLocalizations.of(context)!.appNotice, style:  Theme.of(context).textTheme.bodySmall,))),
           ]).toList(),
         ));
   }
