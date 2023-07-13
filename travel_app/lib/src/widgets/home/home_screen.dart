@@ -9,9 +9,7 @@ import '../../model/city_zone.dart';
 import 'selected_zone.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key, required this.title}) : super(key: key);
-
-  final String title;
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -51,7 +49,7 @@ class _HomePageState extends State<HomePage> {
     );
     return Scaffold(
         appBar: AppBar(
-          title: Text(widget.title),
+          title: Text(AppLocalizations.of(context)!.title),
           actions: <Widget>[
             IconButton(
               icon: const Icon(Icons.help),

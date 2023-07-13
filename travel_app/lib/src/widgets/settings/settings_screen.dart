@@ -94,16 +94,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
             Padding(
                 padding: const EdgeInsets.all(16),
                 child: Center(child: Text(AppLocalizations.of(context)!.aboutUs))),
-            ListTile(
-              title: Text(AppLocalizations.of(context)!.website),
-              onTap: () => openUrl('beogradplus.rs', ''),
-            ),
-            ListTile(
-              title: Text(AppLocalizations.of(context)!.emailContact),
-              onTap: () => sendEmail(),
-            ),
             const ListTile(
-              title: Text('Šakal Software'),
+              title: Text('Šakal Software © Copyright 2023'),
             ),
             Padding(
                 padding: const EdgeInsets.all(16),

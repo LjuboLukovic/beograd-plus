@@ -43,7 +43,7 @@ class _IntroPageState extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
     if (!isLoading && !isThisVersionDeprecated) {
-      return HomePage(title: AppLocalizations.of(context)!.title);
+      return HomePage();
     }
     return Scaffold(
         body: Center(

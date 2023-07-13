@@ -1,3 +1,4 @@
+import 'package:beograd_plus/src/widgets/home/home_screen.dart';
 import 'package:beograd_plus/src/widgets/intro_screen.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -48,7 +49,7 @@ class TravelApp extends StatelessWidget {
           }
           return supportedLocales.first;
         },
-        home: const IntroPage());
+        home: const HomePage());
   }
 }
 
